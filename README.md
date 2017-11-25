@@ -116,8 +116,9 @@ let pitch = function(effect: string) : number {
     else
         return 123.9; 
 }
-
-Legend:
+```
+```ts
+// Like a Boss:
 const pitch: number = (effect: string) => effect == "fastball" ? 170.5 : 123.9; 
 ```
 ## Expert work with TS 
