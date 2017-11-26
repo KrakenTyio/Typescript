@@ -103,18 +103,20 @@ const value: string = inning as string;	// JSX as operator
 ### Functions
 ```js
 var pitch = function(effect) {
-    if(effect == "fastball")
+    if(effect == "fastball") {
         return 170.5;
-    else
-        return 123.9; 
+    } else {
+        return 123.9;
+    }
 }
 ```
 ```ts
 let pitch = function(effect: string) : number {
-    if(effect == "fastball")
+    if(effect == "fastball") {
         return 170.5;
-    else
-        return 123.9; 
+    } else {
+        return 123.9;
+    }
 }
 ```
 ```ts
