@@ -249,7 +249,8 @@ called on:  { method: [Function] } method { value: [Function],
   enumerable: true,
   configurable: true }
 ```
-## Async-Await, RXJS what more?
+## Async-Await, RxJS what more?
+### Async-Await
 ```ts
 function delay(milliseconds: number, count: number): Promise<number> {
     return new Promise<number>(resolve => setTimeout(() => resolve(count), milliseconds));
@@ -265,6 +266,28 @@ async function dramaticWelcome(): Promise<void> { // async function always retur
 }
 
 dramaticWelcome();
+```
+### RxJS
+```ts
+var count = 0;
+var rate = 1000;
+var lastClick = Date.now() - rate;
+var button = document.querySelector('button');
+button.addEventListener('click', (event) => {
+  if (Date.now() - lastClick >= rate) {
+    count += event.clientX;
+    console.log(count)
+    lastClick = Date.now();
+  }
+});
+```
+```ts
+var button = document.querySelector('button');
+Rx.Observable.fromEvent(button, 'click')
+  .throttleTime(1000)
+  .map(event => event.clientX)
+  .scan((count, clientX) => count + clientX, 0)
+  .subscribe(count => console.log(count));
 ```
 ## @Types and externals JS Libs.
 get from NuGet
