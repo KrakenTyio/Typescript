@@ -302,6 +302,7 @@ or with DefinitelyTyped
 > npm install @types/{LIB}
 ```
 ```ts
+// npm install @types/jquery
 // jquery.d.ts
 interface JQuery {
 	appendTo(..): …
