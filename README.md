@@ -184,7 +184,7 @@ interface Burger {
 	cheese: boolean;
 }
 interface ChickenBurger extends Burger {
-	chinken: boolean;
+	chicken: boolean;
 }
 ```
 ```ts
