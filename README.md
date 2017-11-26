@@ -252,7 +252,7 @@ called on:  { method: [Function] } method { value: [Function],
 ## Async-Await, RXJS what more?
 ```ts
 function delay(milliseconds: number, count: number): Promise<number> {
-    return Observable.of(resolve => setTimeout(() => resolve(count), milliseconds)).toPromise();
+    return new Promise<number>(resolve => setTimeout(() => resolve(count), milliseconds));
 }
 
 async function dramaticWelcome(): Promise<void> { // async function always return a Promise
