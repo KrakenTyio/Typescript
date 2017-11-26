@@ -269,6 +269,13 @@ async function dramaticWelcome(): Promise<void> { // async function always retur
 
 dramaticWelcome();
 ```
+```sh
+Hello
+0		// after 500ms
+1		// another 500ms
+2		// another 500ms
+World!
+```
 ### RxJS
 ```ts
 var count = 0;
