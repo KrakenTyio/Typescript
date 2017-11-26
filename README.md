@@ -269,7 +269,7 @@ async function dramaticWelcome(): Promise<void> { // async function always retur
 
 dramaticWelcome();
 ```
-```sh
+```js
 Hello
 0		// after 500ms
 1		// another 500ms
