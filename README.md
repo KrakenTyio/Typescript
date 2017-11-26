@@ -22,12 +22,18 @@
 + Compilation to native JS
 
 ### Types
-- Object 				-> any
-- void 				-> void
-- boolean 				-> boolean
-- integer, ling, short … 	-> number
-- string, char 			-> string
-- Type[] 				-> type[]
+- Object -> any
+- void -> void
+- boolean -> boolean
+- integer, ling, short … -> number
+- string, char -> string
+- Type[] -> type[]
+
+### Good to know
+- Tuple type, [string, number]
+- undefined and null
+- never, never != any
+- Use ‘let’ instead of ‘var’
 
 ### Other
 - Alliases
