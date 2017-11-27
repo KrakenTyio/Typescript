@@ -2,11 +2,11 @@
 
 ## What is Typescript and why use it
 
-### JS Pros.
+### JS Cons.
 - Dynamic typing
 - Lack of modularity
 
-### JS Cons.
+### JS Pros.
 - It`s everywhere
 - Huge amount of libs
 - Flexible
